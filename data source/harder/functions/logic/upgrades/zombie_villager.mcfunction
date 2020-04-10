@@ -24,7 +24,7 @@
 /execute if score rng hrd_num matches 6 store result score filled hrd_num run data get entity @s HandItems[0]
 /execute if score rng hrd_num matches 6 unless score filled hrd_num > zero hrd_num run data modify entity @s HandItems[0] set value {id:"minecraft:wooden_sword",Count:1b,tag:{Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:fire_aspect",lvl:2s},{id:"minecraft:looting",lvl:3s},{id:"minecraft:sweeping",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s}]}}
 
-/execute if score rng hrd_num matches 7 run data modify entity @s Attributes[{Name:zombie.spawnReinforcements}].Base set value 1
+/execute if score rng hrd_num matches 7 run data modify entity @s Attributes[{Name:zombie.spawn_reinforcements}].Base set value 0.8
 
 /execute if entity @s[y=0,dy=16] run function harder:logic/upgrades/zombie_villager_low
 

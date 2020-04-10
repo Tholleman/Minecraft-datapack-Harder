@@ -1,6 +1,6 @@
 # Namespace
 \var ns harder
-\var fileName file/harder 1.15.2.zip
+\var fileName file/1.16-snapshot.zip
 
 \var tagUpgradeMe makeHarder
 \var tagDoNotUpgrade doNotMakeHarder

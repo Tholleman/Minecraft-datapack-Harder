@@ -1,16 +1,16 @@
 scoreboard players set amount hrd_num 6
 execute store result score rng hrd_num run loot spawn ~ ~ ~ loot harder:rng
 scoreboard players operation rng hrd_num %= amount hrd_num
-execute if score rng hrd_num matches 2 run data modify entity @s Attributes[{Name:generic.maxHealth}].Base set value 60
+execute if score rng hrd_num matches 2 run data modify entity @s Attributes[{Name:generic.max_health}].Base set value 60
 execute if score rng hrd_num matches 2 run data modify entity @s Health set value 60
-execute if score rng hrd_num matches 3 run data modify entity @s Attributes[{Name:generic.knockbackResistance}].Base set value 0.6
-execute if score rng hrd_num matches 4 run data modify entity @s Attributes[{Name:generic.movementSpeed}].Base set value 0.35
-execute if score rng hrd_num matches 5 run data modify entity @s Attributes[{Name:generic.followRange}].Base set value 2048
-execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawnReinforcements,Base:1}]}
-execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawnReinforcements,Base:1}]}
-execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawnReinforcements,Base:1}]}
-execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawnReinforcements,Base:1}]}
-execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawnReinforcements,Base:1}]}
+execute if score rng hrd_num matches 3 run data modify entity @s Attributes[{Name:generic.knockback_resistance}].Base set value 0.6
+execute if score rng hrd_num matches 4 run data modify entity @s Attributes[{Name:generic.movement_speed}].Base set value 0.35
+execute if score rng hrd_num matches 5 run data modify entity @s Attributes[{Name:generic.follow_range}].Base set value 2048
+execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
+execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
+execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
+execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
+execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
 execute if score rng hrd_num matches 1 store result score filled hrd_num run data get entity @s ArmorItems[0]
 execute if score rng hrd_num matches 1 unless score filled hrd_num > zero hrd_num run data modify entity @s ArmorItems[0] set value {id:"minecraft:iron_boots",Count:1b,tag:{Enchantments:[{id:"minecraft:fire_protection",lvl:4s},{id:"minecraft:feather_falling",lvl:4s},{id:"minecraft:thorns",lvl:3s},{id:"minecraft:depth_strider",lvl:3s},{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:mending",lvl:1s},{id:"minecraft:binding_curse",lvl:1s}]}}
 execute if score rng hrd_num matches 1 store result score filled hrd_num run data get entity @s ArmorItems[1]

@@ -59,7 +59,7 @@
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {id:"minecraft:trident",Count:1b}
 
-/execute if <<step>> 7 run data modify entity @s Attributes[{Name:zombie.spawnReinforcements}].Base set value 1
+/execute if <<step>> 7 run data modify entity @s Attributes[{Name:zombie.spawn_reinforcements}].Base set value 1
 
 /execute if <<step>> 8 run data modify entity @s CanPickUpLoot set value 1b
 

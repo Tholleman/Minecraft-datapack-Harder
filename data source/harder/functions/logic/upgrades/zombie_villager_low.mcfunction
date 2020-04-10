@@ -5,7 +5,7 @@
 \file setup/setup_attributes.mctemplate
 
 \repeat 5
-/execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawnReinforcements,Base:1}]}
+/execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
 
 \var currentStep 1
 \var slot ArmorItems[0]
