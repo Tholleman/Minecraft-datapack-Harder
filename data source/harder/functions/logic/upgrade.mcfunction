@@ -1,7 +1,7 @@
 \file ../config.txt
 
 \var minDistance 24
-\var maxDistance 128
+\var maxDistance 64
 \var upgradeAmount 1
 \var loopTime 30s
 \var upgraderCriteria gamemode=!creative,gamemode=!spectator
