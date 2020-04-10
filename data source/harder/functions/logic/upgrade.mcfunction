@@ -78,6 +78,7 @@
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:wither_skeleton] at @s run function <<ns>>:logic/upgrades/wither_skeleton
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zombie] at @s run function <<ns>>:logic/upgrades/zombie
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zombie_villager] at @s run function <<ns>>:logic/upgrades/zombie_villager
+/execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zombified_piglin] at @s run function <<ns>>:logic/upgrades/zombified_piglin
 
 /tag @e[tag=<<tagUpgradeMe>>] remove <<tagUpgradeMe>>
 

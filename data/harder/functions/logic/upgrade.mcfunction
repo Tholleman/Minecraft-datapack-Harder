@@ -24,5 +24,6 @@ execute as @e[tag=makeHarder,type=minecraft:witch] at @s run function harder:log
 execute as @e[tag=makeHarder,type=minecraft:wither_skeleton] at @s run function harder:logic/upgrades/wither_skeleton
 execute as @e[tag=makeHarder,type=minecraft:zombie] at @s run function harder:logic/upgrades/zombie
 execute as @e[tag=makeHarder,type=minecraft:zombie_villager] at @s run function harder:logic/upgrades/zombie_villager
+execute as @e[tag=makeHarder,type=minecraft:zombified_piglin] at @s run function harder:logic/upgrades/zombified_piglin
 tag @e[tag=makeHarder] remove makeHarder
 schedule function harder:logic/upgrade 30s

@@ -20,6 +20,7 @@
     "minecraft:witch",
     "minecraft:wither_skeleton",
     "minecraft:zombie",
-    "minecraft:zombie_villager"
+    "minecraft:zombie_villager",
+    "minecraft:zombified_piglin"
   ]
 }

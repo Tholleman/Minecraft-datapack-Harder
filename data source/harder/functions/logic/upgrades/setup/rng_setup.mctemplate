@@ -1,6 +1,6 @@
 #var amount 
-#file setup/rng_setup
-#file setup/rng_teardown
+#file setup/rng_setup.mctemplate
+#file setup/rng_teardown.mctemplate
 
 /scoreboard players set amount hrd_num <<amount>>
 
