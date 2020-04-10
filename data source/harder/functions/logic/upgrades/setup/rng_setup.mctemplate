@@ -1,0 +1,11 @@
+#var amount 
+#file setup/rng_setup
+#file setup/rng_teardown
+
+/scoreboard players set amount hrd_num <<amount>>
+
+/execute store result score rng hrd_num run loot spawn ~ ~ ~ loot harder:rng
+/scoreboard players operation rng hrd_num %= amount hrd_num
+
+\clevel 2
+/tellraw @p {"score":{"name":"rng","objective":"hrd_num"}}
