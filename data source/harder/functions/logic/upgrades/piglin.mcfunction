@@ -7,6 +7,12 @@
 /execute <<checkFilled>> HandItems[0]
 /execute unless <<isFilled>> run data modify entity @s HandItems[0] set value {id:"minecraft:golden_sword",Count:1b}
 
+# 25% of growing up
+/execute 
+	if <<step>> 0..<<<<amount>> / 4>> 
+	if entity @s[nbt={IsBaby:1b}] 
+	run data remove entity @s IsBaby
+
 /execute if <<step>> 0 run enchant @s minecraft:quick_charge 3
 /execute if <<step>> 0 run enchant @s minecraft:fire_aspect 2
 
@@ -16,11 +22,11 @@
 /execute if <<step>> 2 run enchant @s minecraft:multishot 1
 /execute if <<step>> 2 run enchant @s minecraft:knockback 2
 
-# Harem
 /execute 
 	if <<step>> 3 
-	as @e[type=piglin,distance=0.1..3] 
-	at @s unless entity @s[nbt={isBaby:1}] 
+	unless entity @s[nbt={IsBaby:1b}] 
+	as @e[type=piglin,distance=0.1..8,limit=1] 
+	at @s unless entity @s[nbt={IsBaby:1b}] 
 	run summon minecraft:piglin ~ ~ ~ {IsBaby:1b}
 
 \var currentStep 4
