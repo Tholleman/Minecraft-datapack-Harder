@@ -63,6 +63,7 @@
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:drowned] at @s run function <<ns>>:logic/upgrades/drowned
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:evoker] at @s run function <<ns>>:logic/upgrades/evoker
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:ghast] at @s run function <<ns>>:logic/upgrades/ghast
+/execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:hoglin] at @s run function <<ns>>:logic/upgrades/hoglin
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:husk] at @s run function <<ns>>:logic/upgrades/husk
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:magma_cube] at @s run function <<ns>>:logic/upgrades/magma_cube
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:piglin] at @s run function <<ns>>:logic/upgrades/piglin

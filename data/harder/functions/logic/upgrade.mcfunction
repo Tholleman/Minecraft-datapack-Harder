@@ -9,6 +9,7 @@ execute as @e[tag=makeHarder,type=minecraft:creeper] at @s run function harder:l
 execute as @e[tag=makeHarder,type=minecraft:drowned] at @s run function harder:logic/upgrades/drowned
 execute as @e[tag=makeHarder,type=minecraft:evoker] at @s run function harder:logic/upgrades/evoker
 execute as @e[tag=makeHarder,type=minecraft:ghast] at @s run function harder:logic/upgrades/ghast
+execute as @e[tag=makeHarder,type=minecraft:hoglin] at @s run function harder:logic/upgrades/hoglin
 execute as @e[tag=makeHarder,type=minecraft:husk] at @s run function harder:logic/upgrades/husk
 execute as @e[tag=makeHarder,type=minecraft:magma_cube] at @s run function harder:logic/upgrades/magma_cube
 execute as @e[tag=makeHarder,type=minecraft:piglin] at @s run function harder:logic/upgrades/piglin
