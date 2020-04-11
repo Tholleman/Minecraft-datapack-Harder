@@ -1,5 +1,3 @@
-\file ../config.txt
-
 \var minDistance 24
 \var maxDistance 64
 \var upgradeAmount 1

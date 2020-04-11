@@ -1,4 +1,3 @@
-\file ../../config.txt
 /summon minecraft:stray ~ ~ ~ {
 	HandItems:[
 	{

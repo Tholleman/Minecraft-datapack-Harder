@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var fast 0.4
 \var health 40
 \var amount 8

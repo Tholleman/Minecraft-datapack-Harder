@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var amount 100
 \clevel 2
 \var amount 4

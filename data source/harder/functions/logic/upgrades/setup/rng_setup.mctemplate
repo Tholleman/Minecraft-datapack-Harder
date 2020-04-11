@@ -4,7 +4,7 @@
 
 /scoreboard players set amount hrd_num <<amount>>
 
-/execute store result score rng hrd_num run loot spawn ~ ~ ~ loot harder:rng
+/execute store result score rng hrd_num run loot spawn ~ ~ ~ loot <<ns>>:rng
 /scoreboard players operation rng hrd_num %= amount hrd_num
 
 \clevel 2

@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var amount 5
 \file setup/rng_setup.mctemplate
 

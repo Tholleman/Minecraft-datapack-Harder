@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var fast 0.5
 \var health 40
 \var amount 5
@@ -10,6 +9,6 @@
 /execute if <<step>> 3 run effect give @s minecraft:strength 1000000 1
 \repeat 4
 /execute if <<step>> 4 run summon minecraft:spider ~ ~ ~
-/execute if entity @s[y=0,dy=16] run function harder:logic/upgrades/spider_low
+/execute if entity @s[y=0,dy=16] run function <<ns>>:logic/upgrades/spider_low
 
 \file setup/rng_teardown.mctemplate

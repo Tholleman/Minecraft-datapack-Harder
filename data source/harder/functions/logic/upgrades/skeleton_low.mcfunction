@@ -1,5 +1,3 @@
-\file ../../config.txt
-\file util/shortcuts.mctemplate
 \var fast 0.5
 \var health 60
 \var amount 3
@@ -35,7 +33,7 @@
 
 \repeat 3
 /execute if <<step>> 2 run summon blaze ~ ~ ~ {
-	DeathLootTable:"harder:empty",
+	DeathLootTable:"<<ns>>:empty",
 	Tags:["<<tagDoNotUpgrade>>"]
 }
 

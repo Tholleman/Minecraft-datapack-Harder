@@ -10,7 +10,7 @@ execute if score rng hrd_num matches 0 run effect give @s minecraft:invisibility
 execute if score rng hrd_num matches 0 run effect give @s minecraft:regeneration 1000000 1 true
 execute if score rng hrd_num matches 0 run effect give @s minecraft:resistance 1000000 1 true
 execute if score rng hrd_num matches 0 run effect give @s minecraft:strength 1000000 1 true
-execute if score rng hrd_num matches 1 run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:cobweb replace minecraft:air
+execute if score rng hrd_num matches 1 run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:cobweb replace #harder:air
 execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~
 execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~
 execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~

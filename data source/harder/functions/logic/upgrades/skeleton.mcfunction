@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var fast 0.35
 \var health 40
 \var amount 8
@@ -32,6 +31,6 @@
 
 /execute if <<step>> 7 run data modify entity @s CanPickUpLoot set value 1b
 
-/execute if entity @s[y=0,dy=16] run function harder:logic/upgrades/skeleton_low
+/execute if entity @s[y=0,dy=16] run function <<ns>>:logic/upgrades/skeleton_low
 
 \file setup/rng_teardown.mctemplate

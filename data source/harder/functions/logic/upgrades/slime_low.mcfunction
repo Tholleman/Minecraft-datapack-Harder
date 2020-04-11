@@ -1,5 +1,3 @@
-\file ../../config.txt
-\file util/shortcuts.mctemplate
 \var fast 0.5
 \var health 60
 \var amount 4
@@ -12,7 +10,7 @@
 \repeat 2
 /execute if score rng hrd_num matches 2 run summon minecraft:magma_cube ~ ~ ~ {
 	Size:3,
-	DeathLootTable:"harder:empty",
+	DeathLootTable:"<<ns>>:empty",
 	Tags:["<<tagDoNotUpgrade>>"]
 }
 

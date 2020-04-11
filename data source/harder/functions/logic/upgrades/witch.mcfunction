@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var fast 0.4
 \var health 40
 \var amount 6
@@ -14,6 +13,6 @@
 /execute if <<step>> 4 run effect give @a[distance=..32] minecraft:slowness 10 0 true
 /execute if <<step>> 5 run effect give @a[distance=..32] minecraft:weakness 10 0 true
 
-/execute if entity @s[y=0,dy=16] run function harder:logic/upgrades/witch_low
+/execute if entity @s[y=0,dy=16] run function <<ns>>:logic/upgrades/witch_low
 
 \file setup/rng_teardown.mctemplate

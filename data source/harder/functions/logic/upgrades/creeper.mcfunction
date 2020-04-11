@@ -1,5 +1,3 @@
-\file ../../config.txt
-\file util/shortcuts.mctemplate
 \var fast 0.3
 \var health 40
 \var amount 2

@@ -1,4 +1,3 @@
-\file util/shortcuts.mctemplate
 \var fast 0.5
 \var health 40
 \var amount 4
@@ -13,6 +12,6 @@
 \repeat 4
 /execute if score rng hrd_num matches 3 at @s run summon minecraft:slime ~ ~ ~ {Size:2}
 
-/execute if entity @s[y=0,dy=16] run function harder:logic/upgrades/slime_low
+/execute if entity @s[y=0,dy=16] run function <<ns>>:logic/upgrades/slime_low
 
 \file setup/rng_teardown.mctemplate
