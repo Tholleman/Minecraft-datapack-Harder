@@ -14,5 +14,6 @@ execute if score rng hrd_num matches 4 run summon minecraft:cave_spider ~ ~ ~
 execute if score rng hrd_num matches 4 run summon minecraft:cave_spider ~ ~ ~
 execute if score rng hrd_num matches 4 run summon minecraft:cave_spider ~ ~ ~
 execute if score rng hrd_num matches 4 run summon minecraft:cave_spider ~ ~ ~
+execute if entity @s[y=0,dy=16] run function harder:logic/upgrades/cave_spider_low
 scoreboard players reset rng hrd_num
 scoreboard players reset amount hrd_num

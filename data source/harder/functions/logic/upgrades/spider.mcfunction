@@ -3,7 +3,7 @@
 \var amount 5
 \file setup/setup_attributes.mctemplate
 
-/execute if <<step>> 0 run effect give @s minecraft:invisibility 1000000 0
+/execute if <<step>> 0 run effect give @s minecraft:invisibility 1000000 0 true
 /execute if <<step>> 1 run effect give @s minecraft:regeneration 1000000 1
 /execute if <<step>> 2 run effect give @s minecraft:resistance 1000000 1
 /execute if <<step>> 3 run effect give @s minecraft:strength 1000000 1

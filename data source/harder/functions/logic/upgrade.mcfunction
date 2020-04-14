@@ -4,13 +4,13 @@
 \var loopTime 30s
 \var upgraderCriteria gamemode=!creative,gamemode=!spectator
 
-\clevel 2
+\if <<DEV>>
 \var loopTime 10s
-\clevel 2
+\if <<DEV>>
 \var upgraderCriteria nbt={}
-\clevel 2
+\if <<DEV>>
 \var minDistance 0
-\clevel 2
+\if <<DEV>>
 \var maxDistance 24
 
 /execute 
@@ -52,7 +52,7 @@
 		nbt={PersistenceRequired:1b}
 	] remove <<tagUpgradeMe>>
 
-\clevel 2
+\if <<DEV>>
 /tellraw @a "upgrading"
 
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:blaze] at @s run function <<ns>>:logic/upgrades/blaze

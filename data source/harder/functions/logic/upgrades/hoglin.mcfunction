@@ -5,7 +5,7 @@
 
 # 20% for hoglins to procreate
 \var chance 5
-\clevel 2
+\if <<DEV>>
 \var chance 1
 /execute 
 	if <<step>> 0..<<<<amount>> / <<chance>>>> 

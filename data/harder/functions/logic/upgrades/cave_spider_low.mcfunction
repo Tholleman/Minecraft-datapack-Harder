@@ -11,11 +11,10 @@ execute if score rng hrd_num matches 0 run effect give @s minecraft:regeneration
 execute if score rng hrd_num matches 0 run effect give @s minecraft:resistance 1000000 1 true
 execute if score rng hrd_num matches 0 run effect give @s minecraft:strength 1000000 1 true
 execute if score rng hrd_num matches 1 run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:cobweb replace #harder:air
-execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~
-execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~
-execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~
-execute if score rng hrd_num matches 2 run summon minecraft:spider ~ ~ ~
 execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~
 execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~
-scoreboard players reset rng hrd_num
-scoreboard players reset amount hrd_num
+execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~
+execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~
+execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~
+execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~
+execute if score rng hrd_num matches 2 run summon minecraft:cave_spider ~ ~ ~

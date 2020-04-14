@@ -9,5 +9,6 @@
 /execute if <<step>> 3 run effect give @s minecraft:strength 1000000 4
 \repeat 4
 /execute if <<step>> 4 run summon minecraft:cave_spider ~ ~ ~
+/execute if entity @s[y=0,dy=16] run function <<ns>>:logic/upgrades/cave_spider_low
 
 \file setup/rng_teardown.mctemplate

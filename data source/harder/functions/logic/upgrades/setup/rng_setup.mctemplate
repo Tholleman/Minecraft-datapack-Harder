@@ -7,5 +7,5 @@
 /execute store result score rng hrd_num run loot spawn ~ ~ ~ loot <<ns>>:rng
 /scoreboard players operation rng hrd_num %= amount hrd_num
 
-\clevel 2
+\if <<DEV>>
 /tellraw @p {"score":{"name":"rng","objective":"hrd_num"}}

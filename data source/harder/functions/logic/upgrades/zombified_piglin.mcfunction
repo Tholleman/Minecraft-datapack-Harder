@@ -1,5 +1,5 @@
 \var amount 100
-\clevel 2
+\if <<DEV>>
 \var amount 4
 \file setup/rng_setup.mctemplate
 

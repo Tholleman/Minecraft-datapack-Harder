@@ -10,9 +10,6 @@
 
 /execute if <<step>> 1 run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 minecraft:cobweb replace #<<ns>>:air
 
-\repeat 4
-/execute if <<step>> 2 run summon minecraft:spider ~ ~ ~
-\repeat 2
+\repeat 7
 /execute if <<step>> 2 run summon minecraft:cave_spider ~ ~ ~
 
-\file setup/rng_teardown.mctemplate

@@ -6,7 +6,7 @@ execute if score rng hrd_num matches 5 run data modify entity @s Health set valu
 execute if score rng hrd_num matches 6 run data modify entity @s Attributes[{Name:generic.knockback_resistance}].Base set value 0.6
 execute if score rng hrd_num matches 7 run data modify entity @s Attributes[{Name:generic.movement_speed}].Base set value 0.5
 execute if score rng hrd_num matches 8 run data modify entity @s Attributes[{Name:generic.follow_range}].Base set value 2048
-execute if score rng hrd_num matches 0 run effect give @s minecraft:invisibility 1000000 0
+execute if score rng hrd_num matches 0 run effect give @s minecraft:invisibility 1000000 0 true
 execute if score rng hrd_num matches 1 run effect give @s minecraft:regeneration 1000000 1
 execute if score rng hrd_num matches 2 run effect give @s minecraft:resistance 1000000 1
 execute if score rng hrd_num matches 3 run effect give @s minecraft:strength 1000000 1
