@@ -4,7 +4,7 @@
 /scoreboard players set zero hrd_num 0
 
 \if <<DEV>>
-/tellraw @a "<<DATAPACK_NAME>> <<DATAPACK_VERSION>> is loaded"
+/tellraw @a "<<DATAPACK_NAME>> is loaded"
 
 # Start the loop
 /function <<ns>>:logic/upgrade

@@ -16,6 +16,7 @@ execute as @e[tag=makeHarder,type=minecraft:piglin] at @s run function harder:lo
 execute as @e[tag=makeHarder,type=minecraft:pillager] at @s run function harder:logic/upgrades/pillager
 execute as @e[tag=makeHarder,type=minecraft:ravager] at @s run function harder:logic/upgrades/ravager
 execute as @e[tag=makeHarder,type=minecraft:shulker] at @s run function harder:logic/upgrades/shulker
+execute as @e[tag=makeHarder,type=minecraft:silverfish] at @s run function harder:logic/upgrades/silverfish
 execute as @e[tag=makeHarder,type=minecraft:skeleton] at @s run function harder:logic/upgrades/skeleton
 execute as @e[tag=makeHarder,type=minecraft:slime] at @s run function harder:logic/upgrades/slime
 execute as @e[tag=makeHarder,type=minecraft:stray] at @s run function harder:logic/upgrades/stray
