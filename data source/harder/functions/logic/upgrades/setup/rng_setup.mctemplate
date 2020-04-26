@@ -3,6 +3,8 @@
 #file setup/rng_teardown.mctemplate
 
 /scoreboard players set amount hrd_num <<amount>>
+/scoreboard players operation amount hrd_num < @s hrd_difficulty
+/scoreboard players operation amount hrd_num > one hrd_num
 
 /execute store result score rng hrd_num run loot spawn ~ ~ ~ loot <<ns>>:rng
 /scoreboard players operation rng hrd_num %= amount hrd_num

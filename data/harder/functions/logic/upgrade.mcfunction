@@ -1,8 +1,12 @@
+scoreboard players add @a[gamemode=!creative,gamemode=!spectator] hrd_progress 1
+scoreboard players add @a[scores={hrd_progress=80..}] hrd_difficulty 1
+scoreboard players set @a[scores={hrd_progress=80..}] hrd_progress 0
 execute as @e[type=#harder:upgraders,gamemode=!creative,gamemode=!spectator] at @s run tag @e[type=#harder:upgradable,distance=..64,limit=1,sort=random] add makeHarder
 execute as @e[type=#harder:village_upgraders] at @s run tag @e[type=#harder:village_upgradable,distance=24..64,limit=1,sort=random] add makeHarder
 execute as @e[tag=makeHarder,tag=doNotMakeHarder] run tag @s remove makeHarder
 execute as @e[tag=makeHarder,type=!#harder:no_range_limit] at @s if entity @p[distance=..24,gamemode=!creative,gamemode=!spectator] run tag @s remove makeHarder
 tag @e[tag=makeHarder,nbt={PersistenceRequired:1b}] remove makeHarder
+execute as @e[tag=makeHarder] at @s run scoreboard players operation @s hrd_difficulty = @p hrd_difficulty
 execute as @e[tag=makeHarder,type=minecraft:blaze] at @s run function harder:logic/upgrades/blaze
 execute as @e[tag=makeHarder,type=minecraft:cave_spider] at @s run function harder:logic/upgrades/cave_spider
 execute as @e[tag=makeHarder,type=minecraft:creeper] at @s run function harder:logic/upgrades/creeper
@@ -24,6 +28,7 @@ execute as @e[tag=makeHarder,type=minecraft:spider] at @s run function harder:lo
 execute as @e[tag=makeHarder,type=minecraft:vindicator] at @s run function harder:logic/upgrades/vindicator
 execute as @e[tag=makeHarder,type=minecraft:witch] at @s run function harder:logic/upgrades/witch
 execute as @e[tag=makeHarder,type=minecraft:wither_skeleton] at @s run function harder:logic/upgrades/wither_skeleton
+execute as @e[tag=makeHarder,type=minecraft:zoglin] at @s run function harder:logic/upgrades/zoglin
 execute as @e[tag=makeHarder,type=minecraft:zombie] at @s run function harder:logic/upgrades/zombie
 execute as @e[tag=makeHarder,type=minecraft:zombie_villager] at @s run function harder:logic/upgrades/zombie_villager
 execute as @e[tag=makeHarder,type=minecraft:zombified_piglin] at @s run function harder:logic/upgrades/zombified_piglin

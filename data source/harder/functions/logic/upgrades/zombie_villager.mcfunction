@@ -1,14 +1,28 @@
-\var fast 0.3
-\var health 40
-\var amount 9
-\file setup/setup_attributes.mctemplate
+\var amount 13
+\file setup/rng_setup.mctemplate
 
-\repeat 5
-/execute if <<step>> 0 run summon minecraft:zombie_villager ~ ~ ~
+/execute if <<step>> 0 run attribute @s generic.follow_range base set 2048
 
-/execute if <<step>> 1 run data modify entity @s IsBaby set value 1
+/execute if <<step>> 1 run attribute @s minecraft:generic.max_health base set 40
+/execute if <<step>> 1 run data modify entity @s Health set value 40
 
 \var currentStep 2
+\var slot HandItems[1]
+/<<checkFilledCMD>>
+/<<setEmptySlotCMD>> {id:"minecraft:totem_of_undying",Count:1b}
+
+/execute if <<step>> 3 run attribute @s generic.movement_speed base set 0.3
+
+/execute if <<step>> 4 run attribute @s generic.knockback_resistance base set 0.6
+
+/execute if <<step>> 5 run data modify entity @s IsBaby set value 1
+
+\repeat 5
+/execute if <<step>> 6 run summon minecraft:zombie_villager ~ ~ ~
+
+/execute if <<step>> 7 run attribute @s minecraft:zombie.spawn_reinforcements base set 0.8
+
+\var currentStep 8
 \var slot ArmorItems[0]
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {
@@ -25,7 +39,7 @@
 	]}
 }
 
-\var currentStep 3
+\var currentStep 9
 \var slot ArmorItems[1]
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {
@@ -40,7 +54,7 @@
 	]}
 }
 
-\var currentStep 4
+\var currentStep 10
 \var slot ArmorItems[2]
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {
@@ -55,7 +69,7 @@
 	]}
 }
 
-\var currentStep 5
+\var currentStep 11
 \var slot ArmorItems[3]
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {
@@ -72,7 +86,7 @@
 	]}
 }
 
-\var currentStep 6
+\var currentStep 12
 \var slot HandItems[0]
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {
@@ -87,13 +101,6 @@
 		{id:"minecraft:mending",lvl:1s}
 	]}
 }
-
-\var currentStep 7
-\var slot HandItems[1]
-/<<checkFilledCMD>>
-/<<setEmptySlotCMD>> {id:"minecraft:totem_of_undying",Count:1b}
-
-/execute if <<step>> 8 run data modify entity @s Attributes[{Name:zombie.spawn_reinforcements}].Base set value 0.8
 
 /execute if entity @s[y=0,dy=16] run function <<ns>>:logic/upgrades/zombie_villager_low
 

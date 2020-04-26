@@ -1,7 +1,5 @@
-\var fast 0.5
-\var health 40
 \var amount 7
-\file setup/setup_attributes.mctemplate
+\file setup/rng_setup.mctemplate
 
 \var currentStep 0..1
 \var slot HandItems[1]

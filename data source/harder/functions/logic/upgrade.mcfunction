@@ -13,6 +13,11 @@
 \if <<DEV>>
 \var maxDistance 24
 
+/scoreboard players add @a[<<upgraderCriteria>>] hrd_progress 1
+# Increase the difficulty every 2 days
+/scoreboard players add @a[scores={hrd_progress=80..,hrd_difficulty=..99}] hrd_difficulty 1
+/scoreboard players set @a[scores={hrd_progress=80..}] hrd_progress 0
+
 /execute 
 	as @e[type=#<<ns>>:upgraders,<<upgraderCriteria>>] 
 	at @s 
@@ -52,6 +57,11 @@
 		nbt={PersistenceRequired:1b}
 	] remove <<tagUpgradeMe>>
 
+/execute 
+	as @e[tag=<<tagUpgradeMe>>] 
+	at @s 
+	run scoreboard players operation @s hrd_difficulty = @p hrd_difficulty
+
 \if <<DEV>>
 /tellraw @a "upgrading"
 
@@ -76,6 +86,7 @@
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:vindicator] at @s run function <<ns>>:logic/upgrades/vindicator
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:witch] at @s run function <<ns>>:logic/upgrades/witch
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:wither_skeleton] at @s run function <<ns>>:logic/upgrades/wither_skeleton
+/execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zoglin] at @s run function <<ns>>:logic/upgrades/zoglin
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zombie] at @s run function <<ns>>:logic/upgrades/zombie
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zombie_villager] at @s run function <<ns>>:logic/upgrades/zombie_villager
 /execute as @e[tag=<<tagUpgradeMe>>,type=minecraft:zombified_piglin] at @s run function <<ns>>:logic/upgrades/zombified_piglin

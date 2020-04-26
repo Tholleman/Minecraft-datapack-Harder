@@ -1,4 +1,8 @@
+scoreboard players reset zero hrd_num
+scoreboard players reset one hrd_num
 scoreboard objectives remove hrd_num
+scoreboard objectives remove hrd_progress
+scoreboard objectives remove hrd_difficulty
 schedule clear harder:logic/upgrade
 scoreboard objectives add uninstallSuccess dummy
 execute store result score @s uninstallSuccess run datapack disable "file/harder 1.16-snapshot.zip"

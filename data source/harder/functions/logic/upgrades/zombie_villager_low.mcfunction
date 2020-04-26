@@ -1,12 +1,14 @@
-\var fast 0.35
-\var health 60
-\var amount 2
-\file setup/setup_attributes.mctemplate
+\var amount 5
+\file setup/rng_setup.mctemplate
 
-\repeat 5
-/execute if score rng hrd_num matches 0 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}
+/execute if <<step>> 0 run attribute @s minecraft:generic.max_health base set 60
+/execute if <<step>> 0 run data modify entity @s Health set value 60
 
-\var currentStep 1
+/execute if <<step>> 1 run attribute @s generic.movement_speed base set 0.35
+
+/execute if <<step>> 2 run attribute @s generic.knockback_resistance base set 1
+
+\var currentStep 3
 \var slot ArmorItems[0]
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {
@@ -86,5 +88,5 @@
 /<<checkFilledCMD>>
 /<<setEmptySlotCMD>> {id:"minecraft:totem_of_undying",Count:1b}
 
-
-\file setup/rng_teardown.mctemplate
+\repeat 5
+/execute if <<step>> 4 run summon minecraft:zombie_villager ~ ~ ~ {Attributes:[{Name:zombie.spawn_reinforcements,Base:1}]}

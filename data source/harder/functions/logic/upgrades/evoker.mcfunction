@@ -1,7 +1,5 @@
-\var fast 0.7
-\var health 40
 \var amount 4
-\file setup/setup_attributes.mctemplate
+\file setup/rng_setup.mctemplate
 
 \var pillager minecraft:pillager ~ ~ ~ {
 	HandItems:[

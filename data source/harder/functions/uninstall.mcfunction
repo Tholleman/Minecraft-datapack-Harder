@@ -1,4 +1,9 @@
+/scoreboard players reset zero hrd_num
+/scoreboard players reset one hrd_num
+
 /scoreboard objectives remove hrd_num
+/scoreboard objectives remove hrd_progress
+/scoreboard objectives remove hrd_difficulty
 
 /schedule clear <<ns>>:logic/upgrade
 

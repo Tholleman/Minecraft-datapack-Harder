@@ -1,3 +1,4 @@
+# 1/100 to suddenly anger the zombified piglins
 \var amount 100
 \if <<DEV>>
 \var amount 4
