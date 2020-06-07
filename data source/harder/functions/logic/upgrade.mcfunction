@@ -14,9 +14,9 @@
 \var maxDistance 24
 
 /scoreboard players add @a[<<upgraderCriteria>>] hrd_progress 1
-# Increase the difficulty every 2 days
-/scoreboard players add @a[scores={hrd_progress=80..,hrd_difficulty=..99}] hrd_difficulty 1
-/scoreboard players set @a[scores={hrd_progress=80..}] hrd_progress 0
+# Increase the difficulty every 1/2 day
+/scoreboard players add @a[scores={hrd_progress=20..,hrd_difficulty=..99}] hrd_difficulty 1
+/scoreboard players set @a[scores={hrd_progress=20..}] hrd_progress 0
 
 /execute 
 	as @e[type=#<<ns>>:upgraders,<<upgraderCriteria>>] 
